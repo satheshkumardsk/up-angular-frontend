@@ -1,0 +1,21 @@
+<form class="form-signin" [formGroup]="form" (submit)='submit()'>
+    <h1 class="h3 mb-3 font-weight-normal">Please Register</h1>
+
+    <label for="firstname" class="sr-only">First Name</label>
+    <input formControlName="firstName" type="text" id="firstname" class="form-control" placeholder="First Name" required>
+
+    <label for="lastname" class="sr-only">Last Name</label>
+    <input formControlName="lastName" type="text" id="lastname" class="form-control" placeholder="Last Name" required>
+
+
+    <label for="inputEmail" class="sr-only">Email address</label>
+    <input formControlName="email" type="email" id="inputEmail" class="form-control" placeholder="Email address" required>
+
+    <label for="inputPassword" class="sr-only">Password</label>
+    <input formControlName="password" type="password" id="inputPassword" class="form-control" placeholder="Password" required>
+
+    <label for="confirmpassword" class="sr-only">Confirm Password</label>
+    <input formControlName="confirmPassword" type="password" id="confirmpassword" class="form-control" placeholder="Confirm Password" required>
+
+    <button class="btn btn-lg btn-primary btn-block" type="submit">Register</button>
+</form>
